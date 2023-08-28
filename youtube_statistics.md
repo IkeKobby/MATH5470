@@ -16,6 +16,7 @@ The "Global YouTube Statistic" dataset offers a comprehensive look into the worl
 - **Dataset Name**: Global YouTube Statistic
 - **Dataset Source**: [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023)
 - **Dataset Size**: 995 rows and 28 columns
+- **Coverage**: 01/01/2023 - 07/20/2023
 
 ## Features
 
