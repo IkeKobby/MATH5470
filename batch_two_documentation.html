@@ -1,0 +1,127 @@
+<h1 id="global-youtube-statistic-dataset-documentation">Global YouTube
+Statistic Dataset Documentation</h1>
+<p>Name: Isaac Kobby Anni</p>
+<p>Program: Data Science</p>
+<p>Department: Computer Science</p>
+<h2 id="introduction">Introduction</h2>
+<p>The “Global YouTube Statistic” dataset offers a comprehensive look
+into the world of YouTube stardom, providing statistics for some of the
+most subscribed YouTube channels. This meticulously curated dataset
+presents an opportunity to explore and gain insights from the leading
+creators on the platform. With detailed information on subscriber
+counts, video views, upload frequency, country of origin, earnings, and
+more, this dataset is a valuable resource for aspiring content creators,
+data enthusiasts, and anyone interested in the ever-evolving online
+content landscape.</p>
+<h3 id="dataset-information">Dataset Information</h3>
+<ul>
+<li><strong>Dataset Name</strong>: Global YouTube Statistic</li>
+<li><strong>Dataset Source</strong>: <a
+href="https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023">Kaggle</a></li>
+<li><strong>Dataset Size</strong>: 995 rows and 28 columns</li>
+<li><strong>Coverage</strong>: 01/01/2023 - 07/20/2023</li>
+</ul>
+<h2 id="features">Features</h2>
+<ol type="1">
+<li><strong>rank</strong>: The ranking of the YouTube channel.</li>
+<li><strong>Youtuber</strong>: The name of the YouTube channel.</li>
+<li><strong>subscribers</strong>: The number of subscribers to the
+channel.</li>
+<li><strong>video views</strong>: The total number of video views on the
+channel.</li>
+<li><strong>category</strong>: The category to which the channel
+belongs.</li>
+<li><strong>Title</strong>: The title or name of the YouTube video.</li>
+<li><strong>uploads</strong>: The number of video uploads on the
+channel.</li>
+<li><strong>Country</strong>: The country of origin of the YouTube
+channel.</li>
+<li><strong>Abbreviation</strong>: The country abbreviation.</li>
+<li><strong>channel_type</strong>: The type or category of the YouTube
+channel.</li>
+<li><strong>video_views_rank</strong>: The ranking of video views for
+the channel.</li>
+<li><strong>country_rank</strong>: The ranking of the channel within its
+country of origin.</li>
+<li><strong>channel_type_rank</strong>: The ranking of the channel
+within its category.</li>
+<li><strong>video_views_for_the_last_30_days</strong>: The total video
+views in the last 30 days.</li>
+<li><strong>lowest_monthly_earnings</strong>: The lowest monthly
+earnings of the channel.</li>
+<li><strong>highest_monthly_earnings</strong>: The highest monthly
+earnings of the channel.</li>
+<li><strong>lowest_yearly_earnings</strong>: The lowest yearly earnings
+of the channel.</li>
+<li><strong>highest_yearly_earnings</strong>: The highest yearly
+earnings of the channel.</li>
+<li><strong>subscribers_for_last_30_days</strong>: The number of
+subscribers gained in the last 30 days.</li>
+<li><strong>created_year</strong>: The year when the channel was
+created.</li>
+<li><strong>created_month</strong>: The month when the channel was
+created.</li>
+<li><strong>created_date</strong>: The exact date of channel
+creation.</li>
+<li><strong>Gross tertiary education enrollment (%)</strong>: Gross
+tertiary education enrollment percentage in the channel’s country.</li>
+<li><strong>Population</strong>: The population of the channel’s
+country.</li>
+<li><strong>Unemployment rate</strong>: The unemployment rate in the
+channel’s country.</li>
+<li><strong>Urban_population</strong>: The urban population in the
+channel’s country.</li>
+<li><strong>Latitude</strong>: The latitude coordinate of the channel’s
+country.</li>
+<li><strong>Longitude</strong>: The longitude coordinate of the
+channel’s country.</li>
+</ol>
+<h2 id="potential-use-cases">Potential Use Cases</h2>
+<p>The Global YouTube Statistic dataset can be used for various
+analytical and research purposes, including:</p>
+<ol type="1">
+<li><strong>YouTube Channel Analysis</strong>: Analyzing the subscriber
+counts, video views, and earnings of top YouTube channels.</li>
+<li><strong>Content Strategy</strong>: Identifying trends and insights
+to optimize content creation strategies.</li>
+<li><strong>Geographical Analysis</strong>: Exploring the distribution
+of YouTube channels and their characteristics by country.</li>
+<li><strong>Economic Insights</strong>: Investigating the relationship
+between YouTube success and economic indicators like unemployment rates
+and education enrollment.</li>
+<li><strong>Content Creator Research</strong>: Studying the growth
+patterns and strategies of successful content creators.</li>
+</ol>
+<h2 id="data-quality-and-considerations">Data Quality and
+Considerations</h2>
+<ul>
+<li>Data quality is essential when working with this dataset. Ensure you
+understand the data source and any data cleaning or preprocessing steps
+that may be required.</li>
+<li>Missing data: Check for missing values in the dataset and decide on
+an appropriate strategy for handling them.</li>
+<li>Outliers: Be aware of outliers in numerical columns that may affect
+your analysis.</li>
+<li>Data exploration: Explore the data to identify interesting patterns
+and correlations.</li>
+</ul>
+<h2 id="how-to-read-in-data">How to read in data</h2>
+<ul>
+<li>Link: <a
+href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHCxrtIVViKsYA1SsmpBaW3ovW369ku5IjIIgcAmRROKAnTQWrqNROhT6m6E2Hyi74XJvYtw22MpQ8/pub?output=csv">https://docs.google.com/spreadsheets/d/e/2PACX-1vQHCxrtIVViKsYA1SsmpBaW3ovW369ku5IjIIgcAmRROKAnTQWrqNROhT6m6E2Hyi74XJvYtw22MpQ8/pub?output=csv</a></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">### R</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vQHCxrtIVViKsYA1SsmpBaW3ovW369ku5IjIIgcAmRROKAnTQWrqNROhT6m6E2Hyi74XJvYtw22MpQ8/pub?output=csv&quot;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Python</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vQHCxrtIVViKsYA1SsmpBaW3ovW369ku5IjIIgcAmRROKAnTQWrqNROhT6m6E2Hyi74XJvYtw22MpQ8/pub?output=csv&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df.head() </span></code></pre></div>
+<h2 id="citation">Citation</h2>
+<ul>
+<li>Dataset Source: “Global YouTube Statistic” on Kaggle (URL: <a
+href="https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023">https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023</a>)</li>
+</ul>

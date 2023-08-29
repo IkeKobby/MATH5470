@@ -1,0 +1,107 @@
+<h1 id="sp-500-esg-risk-ratings-dataset-documentation">SP 500 ESG Risk
+Ratings Dataset Documentation</h1>
+<p>Name: Isaac Kobby Anni</p>
+<p>Program: Data Science</p>
+<p>Department: Computer Science</p>
+<h2 id="introduction">Introduction</h2>
+<p>The “SP 500 ESG Risk Ratings” dataset is a comprehensive collection
+of environmental, social, and governance (ESG) risk ratings for
+companies listed in the S&amp;P 500 index. It contains information about
+various aspects of these companies, including their sector, industry,
+workforce, and ESG risk scores. This documentation provides an overview
+of the dataset, its features, and potential applications.</p>
+<h2 id="dataset-information">Dataset Information</h2>
+<ul>
+<li>Dataset Name: SP 500 ESG Risk Rating</li>
+<li>Dataset Source: <a
+href="https://www.kaggle.com/datasets/pritish509/s-and-p-500-esg-risk-ratings">Kaggle</a></li>
+<li>Dataset Size: 503 rows and 15 columns</li>
+<li>Coverage: Collected between 12/31/2022 - 01/30/2023</li>
+</ul>
+<h2 id="features">Features</h2>
+<ol type="1">
+<li><strong>Symbol</strong>: The stock symbol or ticker symbol of the
+company.</li>
+<li><strong>Name</strong>: The name of the company.</li>
+<li><strong>Address</strong>: The address of the company’s
+headquarters.</li>
+<li><strong>Sector</strong>: The sector to which the company
+belongs.</li>
+<li><strong>Industry</strong>: The industry in which the company
+operates.</li>
+<li><strong>Full-Time Employees</strong>: The number of full-time
+employees in the company.</li>
+<li><strong>Description</strong>: A brief description of the
+company.</li>
+<li><strong>Total ESG Risk Score</strong>: The overall ESG risk score
+for the company, which is a composite score taking into account
+environmental, social, and governance risks.</li>
+<li><strong>Environment Risk Score</strong>: The ESG risk score related
+to environmental factors.</li>
+<li><strong>Governance Risk Score</strong>: The ESG risk score related
+to governance factors.</li>
+<li><strong>Social Risk Score</strong>: The ESG risk score related to
+social factors.</li>
+<li><strong>Controversy Level</strong>: The level of controversy
+associated with the company’s ESG practices.</li>
+<li><strong>Controversy Score</strong>: A numerical score representing
+the extent of controversy.</li>
+<li><strong>ESG Risk Percentile</strong>: The percentile rank of the
+company’s ESG risk score compared to other companies in the
+dataset.</li>
+<li><strong>ESG Risk Level</strong>: The categorical risk level (e.g.,
+low, moderate, high) based on the ESG risk score.</li>
+</ol>
+<h2 id="potential-use-cases">Potential Use Cases</h2>
+<p>The SP 500 ESG Risk Ratings dataset can be valuable for various
+analytical and research purposes:</p>
+<ol type="1">
+<li><p><strong>Investment Analysis</strong>: Investors can use the ESG
+risk scores to make informed decisions about which companies align with
+their ethical and sustainable investment goals.</p></li>
+<li><p><strong>Sector Comparison</strong>: Researchers can analyze ESG
+scores within specific sectors to identify trends and variations in ESG
+performance.</p></li>
+<li><p><strong>Risk Assessment</strong>: Risk analysts can assess the
+overall risk profile of companies by considering their environmental,
+social, and governance scores.</p></li>
+<li><p><strong>Controversy Analysis</strong>: The dataset provides
+information on controversy levels and scores, which can be used to
+investigate companies with high controversy.</p></li>
+<li><p><strong>Benchmarking</strong>: Companies can use this dataset to
+benchmark their ESG performance against industry peers and
+competitors.</p></li>
+</ol>
+<h2 id="data-quality-and-considerations">Data Quality and
+Considerations</h2>
+<ul>
+<li>Data quality is critical when working with ESG ratings. Ensure that
+you understand the data source and methodology used to calculate the ESG
+scores.</li>
+<li>Missing data: Check for missing values in the dataset and decide on
+an appropriate strategy for handling them.</li>
+<li>Outliers: Explore the data for outliers that might affect your
+analysis.</li>
+<li>Data cleaning: Depending on your analysis goals, you may need to
+clean and preprocess the data.</li>
+</ul>
+<h2 id="how-to-read-in-data">How to read in data</h2>
+<ul>
+<li>Link: <a
+href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjCEiGD_4TIR1C36NnVvOGo9sTX0Y3IMZrPYONQ1yJ19nqtb5PgDDR1dZXngQTbNbeUXUtGUPpl49T/pub?output=csv">https://docs.google.com/spreadsheets/d/e/2PACX-1vTjCEiGD_4TIR1C36NnVvOGo9sTX0Y3IMZrPYONQ1yJ19nqtb5PgDDR1dZXngQTbNbeUXUtGUPpl49T/pub?output=csv</a></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">### R</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vTjCEiGD_4TIR1C36NnVvOGo9sTX0Y3IMZrPYONQ1yJ19nqtb5PgDDR1dZXngQTbNbeUXUtGUPpl49T/pub?output=csv&quot;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Python</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vTjCEiGD_4TIR1C36NnVvOGo9sTX0Y3IMZrPYONQ1yJ19nqtb5PgDDR1dZXngQTbNbeUXUtGUPpl49T/pub?output=csv&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df.head() </span></code></pre></div>
+<h2 id="citation">Citation</h2>
+<ul>
+<li>Dataset Source: “SP 500 ESG Risk Ratings” on Kaggle (URL: <a
+href="https://www.kaggle.com/datasets/pritish509/s-and-p-500-esg-risk-ratings">https://www.kaggle.com/datasets/pritish509/s-and-p-500-esg-risk-ratings</a>)</li>
+</ul>
